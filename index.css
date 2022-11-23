@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('BebasNeue.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, sans-serif;
+    text-align: center;
+    background-color: #F9F8F7;
+}
+
+.iframe {
+    width: 100%;
+    height: 100vh;
+}
+
+.contacts {
+    padding: 2rem;
+}
+
+h1 {
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+}
+
+.beautiful-link {
+    color: black;
+    font-weight: 100;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: .5rem 1rem;
+    background-color: white;
+}
+
+.beautiful-link:hover {
+    cursor: pointer;
+}
+
+.author {
+    font-size: 16px;
+    color: rgba(84, 171, 252, 1);
+}
+
+@media (min-width: 768px) {
+    .page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 440px;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p {
+        font-size: 21px;
+    }
+
+    .beautiful-link {
+        font-size: 24px;
+        padding: 1rem 2.5rem;
+    }
+
+    .author {
+        position: absolute;
+        bottom: 0;
+    }
+}
